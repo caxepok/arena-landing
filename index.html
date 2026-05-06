@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>ArenaOS — управление многофункциональной площадкой</title>
+  <meta name="description" content="Платформа MONS для управления событиями коммерческой площадки: календарь, паспорт мероприятия, чек-листы, службы, инструктажи, бюджет, подрядчики." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0F1419" />
+
+  <meta property="og:title" content="ArenaOS — управление многофункциональной площадкой" />
+  <meta property="og:description" content="Любое событие собирается как надо. Без суеты." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:site_name" content="ArenaOS" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body id="top">
+
+  <!-- ============== HEADER ============== -->
+  <header class="site-header">
+    <div class="container site-header-inner">
+      <a class="brand" href="#top" aria-label="ArenaOS — на главную">
+        <span class="brand-logo">
+          <svg width="22" height="22" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <path d="M4 28V16a12 12 0 0 1 24 0v12" stroke="rgb(232,194,151)" stroke-width="2" stroke-linecap="round"/>
+            <path d="M10 28V18a6 6 0 0 1 12 0v10" stroke="rgb(232,194,151)" stroke-width="1.6" stroke-linecap="round" opacity="0.7"/>
+            <path d="M2 28h28" stroke="rgb(232,194,151)" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">ArenaOS</span>
+          <span class="brand-tag">УПРАВЛЕНИЕ ПЛОЩАДКОЙ</span>
+        </span>
+      </a>
+      <nav class="site-nav">
+        <a href="#audience">Для кого</a>
+        <a href="#features">Возможности</a>
+        <a href="#contacts">Контакты</a>
+        <button class="btn-login" type="button" data-open-login>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3"/></svg>
+          Войти
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============== HERO ============== -->
+  <section class="hero">
+    <div class="hero-arches" aria-hidden="true"></div>
+    <div class="hero-glow" aria-hidden="true"></div>
+
+    <div class="container hero-inner">
+      <h1 class="hero-title">
+        Любое событие собирается <span class="accent">как надо.</span><br>
+        Без&nbsp;суеты.
+      </h1>
+      <p class="hero-lead">
+        Хоккейный матч с заливкой льда, концерт, театральная постановка, корпоратив или форум —
+        каждое мероприятие на площадке получает ровно те службы, людей и инвентарь, которые нужны.
+        Календарь, паспорт, чек-листы, службы, инструктажи и бюджет — в едином окне.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============== AUDIENCE ============== -->
+  <section class="section" id="audience">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Для кого</p>
+        <h2>Для крупной площадки, которая&nbsp;заботится <br>о&nbsp;клиентах и&nbsp;посетителях.</h2>
+        <p class="section-lead">
+          ArenaOS обеспечивает безопасность, качество и сервис мероприятия, объединяя в одной
+          среде службы, подрядчиков, инвентарь и инструктажи под каждое событие.
+        </p>
+      </div>
+
+      <div class="aud-grid">
+        <article class="aud-card">
+          <span class="aud-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/>
+            </svg>
+          </span>
+          <h3>Операционные и технические директора</h3>
+          <p>Видят весь календарь, готовность по событиям и службам, экономику в моменте. Держат площадку в одном фокусе.</p>
+        </article>
+
+        <article class="aud-card">
+          <span class="aud-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+            </svg>
+          </span>
+          <h3>Начальники штатных служб</h3>
+          <p>Получают чек-лист на смену в мобильном приложении, отмечают выполнение, эскалируют — без созвонов и распечаток.</p>
+        </article>
+
+        <article class="aud-card">
+          <span class="aud-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 2 4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6l-8-4Z"/>
+            </svg>
+          </span>
+          <h3>Руководители службы контроля качества</h3>
+          <p>Контролируют исполнение подрядчиков и штатных служб по чек-листам, ведут примечания и оценки — чтобы стандарт сервиса не падал от события к событию.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FEATURES ============== -->
+  <section class="section section-features" id="features">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Что внутри</p>
+        <h2>Простые модули, чтобы&nbsp;перестать <br>собирать события в&nbsp;Excel и&nbsp;чатах.</h2>
+      </div>
+
+      <div class="features">
+
+        <article class="feature">
+          <div class="feature-text">
+            <div class="feature-num">01</div>
+            <h3>Календарь событий</h3>
+            <p>Неделя по типам мероприятий — хоккей, концерт, театр, форум, корпоратив. Цветовая навигация, готовность по дням, занятость залов и площадки.</p>
+          </div>
+          <div class="feature-shot">
+            <img src="assets/screens/01-calendar.png" alt="Календарь событий ArenaOS" loading="lazy" />
+          </div>
+        </article>
+
+        <article class="feature reverse">
+          <div class="feature-text">
+            <div class="feature-num">02</div>
+            <h3>Реестр событий</h3>
+            <p>Список всех мероприятий с фильтрами по дате, заказчику, типу и статусу — в подготовке, утверждено, проведено. Видно, какие события сейчас в работе.</p>
+          </div>
+          <div class="feature-shot">
+            <img src="assets/screens/02-events-list.png" alt="Реестр событий ArenaOS" loading="lazy" />
+          </div>
+        </article>
+
+        <article class="feature">
+          <div class="feature-text">
+            <div class="feature-num">03</div>
+            <h3>Паспорт события</h3>
+            <p>Единая карточка мероприятия: заказчик, описание, службы, персонал, инвентарь, документы, бюджет. Весь контекст события в одном экране.</p>
+          </div>
+          <div class="feature-shot">
+            <img src="assets/screens/03-event-passport.png" alt="Паспорт события ArenaOS" loading="lazy" />
+          </div>
+        </article>
+
+        <article class="feature reverse">
+          <div class="feature-text">
+            <div class="feature-num">04</div>
+            <h3>Чек-лист события</h3>
+            <p>Подготовка по службам, обязательные пункты по регламенту, сроки и ответственные. Просрочки и эскалации видны сразу — без поиска по чатам.</p>
+          </div>
+          <div class="feature-shot">
+            <img src="assets/screens/04-event-checklist.png" alt="Чек-лист события ArenaOS" loading="lazy" />
+          </div>
+        </article>
+
+        <article class="feature">
+          <div class="feature-text">
+            <div class="feature-num">05</div>
+            <h3>Службы</h3>
+            <p>Свои подразделения и привлечённые подрядчики в одном реестре. Загрузка, ответственные, исполнительность по чек-листам и примечания от сотрудников.</p>
+          </div>
+          <div class="feature-shot">
+            <img src="assets/screens/05-services.png" alt="Реестр служб ArenaOS" loading="lazy" />
+          </div>
+        </article>
+
+        <article class="feature reverse">
+          <div class="feature-text">
+            <div class="feature-num">06</div>
+            <h3>Бюджет события</h3>
+            <p>Доход от заказчика и продажи билетов, затраты по подрядчикам. Быстрый взгляд на финансовую эффективность.</p>
+          </div>
+          <div class="feature-shot">
+            <img src="assets/screens/06-event-budget.png" alt="Бюджет события ArenaOS" loading="lazy" />
+          </div>
+        </article>
+
+        <article class="feature">
+          <div class="feature-text">
+            <div class="feature-num">07</div>
+            <h3>Карточка подрядчика</h3>
+            <p>Исполнительность по чек-листам в процентах и лента примечаний от любого сотрудника площадки с цветными метками — хорошо, плохо, важно, нейтрально.</p>
+          </div>
+          <div class="feature-shot">
+            <img src="assets/screens/07-vendor-performance.png" alt="Карточка подрядчика ArenaOS" loading="lazy" />
+          </div>
+        </article>
+
+        <article class="feature reverse">
+          <div class="feature-text">
+            <div class="feature-num">08</div>
+            <h3>Мобильный чек-лист</h3>
+            <p>Вместо хаоса в рациях и звонков — используйте мобильное приложение ArenaOS. Начальник службы проходит по чек-листу в телефоне: подтверждает готовность всех действий перед предстоящим событием или эскалирует выявленную проблему. Руководитель видит статус онлайн в реальном времени, не дожидаясь звонка или бумажного отчёта.</p>
+          </div>
+          <div class="feature-shot">
+            <img src="assets/screens/08-mobile-checklist.png" alt="Мобильный чек-лист ArenaOS" loading="lazy" />
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CONTACTS ============== -->
+  <section class="section section-contacts" id="contacts">
+    <div class="container">
+      <div class="contacts-card">
+        <div class="contacts-text">
+          <p class="eyebrow">Контакты</p>
+          <h2>MONS · ArenaOS</h2>
+          <p class="section-lead">
+            ArenaOS — продукт компании MONS. Платформа для комплексного управления организацией событий на площадке.
+          </p>
+        </div>
+
+        <div class="contacts-list">
+          <a class="contact-row" href="mailto:welcome@mons.ru">
+            <span class="contact-ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>
+              </svg>
+            </span>
+            <span class="contact-body">
+              <span class="contact-lbl">Почта</span>
+              <span class="contact-val">welcome@mons.ru</span>
+            </span>
+            <svg class="contact-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+
+          <a class="contact-row" href="https://mons.ru" target="_blank" rel="noopener noreferrer">
+            <span class="contact-ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/>
+              </svg>
+            </span>
+            <span class="contact-body">
+              <span class="contact-lbl">Сайт компании</span>
+              <span class="contact-val">mons.ru</span>
+            </span>
+            <svg class="contact-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== LOGIN MODAL ============== -->
+  <div class="login-modal" id="login-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="login-title">
+    <div class="login-card">
+      <button class="close" type="button" data-close-login aria-label="Закрыть (Esc)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+
+      <div class="lc-brand">
+        <span class="logo">
+          <svg width="22" height="22" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <path d="M4 28V16a12 12 0 0 1 24 0v12" stroke="rgb(232,194,151)" stroke-width="2" stroke-linecap="round"/>
+            <path d="M10 28V18a6 6 0 0 1 12 0v10" stroke="rgb(232,194,151)" stroke-width="1.6" stroke-linecap="round" opacity="0.7"/>
+            <path d="M2 28h28" stroke="rgb(232,194,151)" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span>
+          <span class="name">ArenaOS</span>
+          <span class="tag" style="display:block;">УПРАВЛЕНИЕ ПЛОЩАДКОЙ</span>
+        </span>
+      </div>
+
+      <h2 id="login-title">Вход в систему</h2>
+      <p class="lc-sub">Войдите в личный кабинет, чтобы продолжить работу.</p>
+
+      <form class="login-form" onsubmit="event.preventDefault();">
+        <div class="field">
+          <label for="login-email">E-mail или логин</label>
+          <input type="text" id="login-email" name="email" placeholder="ivan@arena.ru" autocomplete="username" />
+        </div>
+        <div class="field">
+          <label for="login-password">Пароль</label>
+          <input type="password" id="login-password" name="password" placeholder="••••••••" autocomplete="current-password" />
+        </div>
+        <button type="submit" class="submit">Войти</button>
+      </form>
+
+      <div class="lc-foot">
+        <a href="#">Забыли пароль?</a>
+        <span class="muted">v0.1.0 · MVP</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============== LIGHTBOX ============== -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Просмотр интерфейса">
+    <button class="lightbox-close" type="button" aria-label="Закрыть (Esc)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <figure class="lightbox-figure">
+      <img class="lightbox-img" src="" alt="" />
+      <figcaption class="lightbox-caption"></figcaption>
+    </figure>
+  </div>
+
+  <script>
+    (function () {
+      const lightbox = document.getElementById('lightbox');
+      const lbImg    = lightbox.querySelector('.lightbox-img');
+      const lbCap    = lightbox.querySelector('.lightbox-caption');
+      const lbClose  = lightbox.querySelector('.lightbox-close');
+
+      function open(src, caption) {
+        lbImg.src = src;
+        lbImg.alt = caption || '';
+        lbCap.textContent = caption || '';
+        lightbox.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+      function close() {
+        lightbox.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+        // освобождаем большой PNG из памяти
+        setTimeout(() => { lbImg.src = ''; }, 200);
+      }
+
+      const hintSvg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg>';
+
+      document.querySelectorAll('.feature-shot').forEach((box) => {
+        box.setAttribute('role', 'button');
+        box.setAttribute('tabindex', '0');
+        box.setAttribute('aria-label', 'Открыть скриншот в полном размере');
+        const img = box.querySelector('img');
+        if (!img) return;
+
+        // подсказка «Открыть» появляется при ховере
+        if (!box.querySelector('.zoom-hint')) {
+          const hint = document.createElement('span');
+          hint.className = 'zoom-hint';
+          hint.innerHTML = hintSvg + 'Открыть';
+          box.appendChild(hint);
+        }
+
+        const action = () => open(img.src, img.alt);
+        box.addEventListener('click', action);
+        box.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); action(); }
+        });
+      });
+
+      lightbox.addEventListener('click', (e) => {
+        // клик по тёмному фону закрывает; клик по картинке/фигуре — нет (можно скроллить длинные PNG)
+        if (e.target === lightbox) close();
+      });
+      lbClose.addEventListener('click', close);
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.getAttribute('aria-hidden') === 'false') close();
+      });
+
+      // ===== Login modal =====
+      const loginModal = document.getElementById('login-modal');
+      function openLogin() {
+        loginModal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        const firstField = loginModal.querySelector('input');
+        if (firstField) setTimeout(() => firstField.focus(), 80);
+      }
+      function closeLogin() {
+        loginModal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+      document.querySelectorAll('[data-open-login]').forEach((el) => {
+        el.addEventListener('click', openLogin);
+      });
+      document.querySelectorAll('[data-close-login]').forEach((el) => {
+        el.addEventListener('click', closeLogin);
+      });
+      loginModal.addEventListener('click', (e) => {
+        if (e.target === loginModal) closeLogin();
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && loginModal.getAttribute('aria-hidden') === 'false') closeLogin();
+      });
+    })();
+  </script>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="site-footer">
+    <div class="container site-footer-inner">
+      <span>© 2026 MONS · ArenaOS</span>
+      <span>v0.1.0 · MVP</span>
+    </div>
+  </footer>
+
+</body>
+</html>
