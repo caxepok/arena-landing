@@ -25,13 +25,23 @@ const DESKTOP = { width: 1440, height: 900 };
 const MOBILE  = { width: 1500, height: 940 };
 
 const targets = [
-  { src: '01-calendar.html',           out: '01-calendar.png',           viewport: DESKTOP, fullPage: true  },
-  { src: '02-events-list.html',        out: '02-events-list.png',        viewport: DESKTOP, fullPage: true  },
+  { src: '13-overview-dashboard.html',  out: '13-overview-dashboard.png', viewport: DESKTOP, fullPage: true  },
+  { src: '01-calendar.html',            out: '01-calendar.png',           viewport: DESKTOP, fullPage: true  },
+  { src: '12-schedule-day-detail.html', out: '01b-day-detail.png',        viewport: DESKTOP, fullPage: true  },
+  { src: '02-events-list.html',         out: '02-events-list.png',        viewport: DESKTOP, fullPage: true  },
   { src: '03-event-passport.html',     out: '03-event-passport.png',     viewport: DESKTOP, fullPage: true  },
   { src: '04-event-checklist.html',    out: '04-event-checklist.png',    viewport: DESKTOP, fullPage: true  },
   { src: '05-services.html',           out: '05-services.png',           viewport: DESKTOP, fullPage: true  },
+  // Площадки и зоны на карте — список + интерактивная карта
+  { src: '21-venues.html',             out: 'venues-list.png',           viewport: DESKTOP, fullPage: true  },
+  { src: '21b-venues-map.html',        out: 'venues-map.png',            viewport: DESKTOP, fullPage: true  },
+  { src: '09-event-inventory.html',    out: '09-event-inventory.png',    viewport: DESKTOP, fullPage: true  },
   { src: '06-event-budget.html',       out: '06-event-budget.png',       viewport: DESKTOP, fullPage: true  },
   { src: '07-vendor-performance.html', out: '07-vendor-performance.png', viewport: DESKTOP, fullPage: true  },
+  // Кабинет подрядчика — десктоп
+  { src: '14-vendor-portal.html',      out: '14-vendor-portal.png',      viewport: DESKTOP, fullPage: true  },
+  // Кабинет подрядчика — мобильный (3 рамки телефона рядом)
+  { src: '15-vendor-mobile.html',      out: '15-vendor-mobile.png',      viewport: DESKTOP, fullPage: true  },
   // мобилка — viewport, рамка телефона целиком вписана в кадр 1500×940.
   // Прокручиваем список так, чтобы в кадре были и выполненные (галочка), и невыполненные (кнопка «Подтвердить»).
   {
@@ -52,6 +62,22 @@ const targets = [
         const delta = (itemRect.top - listRect.top) - desiredOffsetFromListTop;
         list.scrollTop = Math.max(0, list.scrollTop + delta);
       });
+    },
+  },
+  // мобилка руководителя — 2 рамки телефона рядом (готовность + эскалации) в одном кадре
+  {
+    src: 'combo-mobile-director.html', out: '10-mobile-director.png',
+    viewport: MOBILE, fullPage: false,
+    prepare: async (page) => {
+      // Дожидаемся загрузки обоих iframe-документов и их шрифтов.
+      const frames = page.frames().filter((f) => f !== page.mainFrame());
+      await Promise.all(frames.map(async (f) => {
+        try {
+          await f.waitForLoadState('networkidle');
+          await f.evaluate(() => document.fonts && document.fonts.ready);
+        } catch (_) { /* фрейм мог уже отрендериться */ }
+      }));
+      await page.waitForTimeout(250);
     },
   },
 ];

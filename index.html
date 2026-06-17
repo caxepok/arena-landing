@@ -2,22 +2,22 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8" />
-  <title>ArenaOS — управление многофункциональной площадкой</title>
-  <meta name="description" content="Платформа MONS для управления событиями коммерческой площадки: календарь, паспорт мероприятия, чек-листы, службы, инструктажи, бюджет, подрядчики." />
+  <title>Кулиса — управление событиями «Винного города» «Белый мыс»</title>
+  <meta name="description" content="Кулиса для площадки «Белый мыс»: календарь событий, паспорт мероприятия, чек-листы, службы, инвентарь, инструктажи и бюджет — единый центр управления винным городом." />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#0F1419" />
+  <meta name="theme-color" content="#013668" />
 
-  <meta property="og:title" content="ArenaOS — управление многофункциональной площадкой" />
-  <meta property="og:description" content="Любое событие собирается как надо. Без суеты." />
+  <meta property="og:title" content="Кулиса — управление событиями «Белого мыса»" />
+  <meta property="og:description" content="Каждое событие винного города собирается как надо. Без суеты." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="ru_RU" />
-  <meta property="og:site_name" content="ArenaOS" />
+  <meta property="og:site_name" content="Кулиса" />
 
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="font" type="font/woff2" href="fonts/bebas/BebasNeuePro-Bold.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="fonts/pangram/pppangramsans-compactregular.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="fonts/pangram/pppangramsans-bold.woff2" crossorigin>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body id="top">
@@ -25,27 +25,23 @@
   <!-- ============== HEADER ============== -->
   <header class="site-header">
     <div class="container site-header-inner">
-      <a class="brand" href="#top" aria-label="ArenaOS — на главную">
+      <a class="brand" href="#top" aria-label="Кулиса — на главную">
         <span class="brand-logo">
           <svg width="22" height="22" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-            <path d="M4 28V16a12 12 0 0 1 24 0v12" stroke="rgb(232,194,151)" stroke-width="2" stroke-linecap="round"/>
-            <path d="M10 28V18a6 6 0 0 1 12 0v10" stroke="rgb(232,194,151)" stroke-width="1.6" stroke-linecap="round" opacity="0.7"/>
-            <path d="M2 28h28" stroke="rgb(232,194,151)" stroke-width="2" stroke-linecap="round"/>
+            <path d="M4 28V16a12 12 0 0 1 24 0v12" stroke="rgb(124,178,226)" stroke-width="2" stroke-linecap="round"/>
+            <path d="M10 28V18a6 6 0 0 1 12 0v10" stroke="rgb(124,178,226)" stroke-width="1.6" stroke-linecap="round" opacity="0.7"/>
+            <path d="M2 28h28" stroke="rgb(124,178,226)" stroke-width="2" stroke-linecap="round"/>
           </svg>
         </span>
         <span class="brand-text">
-          <span class="brand-name">ArenaOS</span>
-          <span class="brand-tag">УПРАВЛЕНИЕ ПЛОЩАДКОЙ</span>
+          <span class="brand-name">Кулиса</span>
+          <span class="brand-tag">ВИННЫЙ ГОРОД · БЕЛЫЙ МЫС</span>
         </span>
       </a>
       <nav class="site-nav">
         <a href="#audience">Для кого</a>
         <a href="#features">Возможности</a>
         <a href="#contacts">Контакты</a>
-        <button class="btn-login" type="button" data-open-login>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3"/></svg>
-          Войти
-        </button>
       </nav>
     </div>
   </header>
@@ -57,26 +53,72 @@
 
     <div class="container hero-inner">
       <h1 class="hero-title">
-        Любое событие собирается <span class="accent">как надо.</span><br>
-        Без&nbsp;суеты.
+        <span class="accent">«Кулиса»</span> — центр управления<br>
+        событиями <span class="accent">«Белого мыса».</span>
       </h1>
       <p class="hero-lead">
-        Хоккейный матч с заливкой льда, концерт, театральная постановка, корпоратив или форум —
-        каждое мероприятие на площадке получает ровно те службы, людей и инвентарь, которые нужны.
-        Календарь, паспорт, чек-листы, службы, инструктажи и бюджет — в едином окне.
+        «Белый мыс» — это больше, чем просто пространство. Винный город, выставочный комплекс,
+        концертная площадка, гастрономическое пространство объединяет одна задача: провести
+        мероприятие так, чтобы гости остались в восторге, а вы были абсолютно спокойны.
+        Каждое событие на площадке «Белый мыс» требует чёткой координации служб, контроля
+        готовности и бесшовной коммуникации.
+        <strong>Наша система собирает всё в единый центр управления вашим пространством.</strong>
       </p>
+
+      <div class="flow hero-flow">
+        <div class="flow-col plan">
+          <div class="flow-step">01 · Стадия</div>
+          <h3>Планируйте</h3>
+          <ul>
+            <li>Календарь</li>
+            <li>Паспорт события</li>
+            <li>Бюджет</li>
+            <li>Инвентарь и оборудование</li>
+            <li>Дорожная карта подготовки</li>
+          </ul>
+        </div>
+        <div class="flow-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </div>
+        <div class="flow-col coord">
+          <div class="flow-step">02 · Стадия</div>
+          <h3>Координируйте</h3>
+          <ul>
+            <li>Службы</li>
+            <li>Персонал</li>
+            <li>Все зоны на карте</li>
+            <li>Занятость площадок и служб</li>
+            <li>Инструктажи и доступы</li>
+          </ul>
+        </div>
+        <div class="flow-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </div>
+        <div class="flow-col control">
+          <div class="flow-step">03 · Стадия</div>
+          <h3>Контролируйте</h3>
+          <ul>
+            <li>Готовность</li>
+            <li>Чек-листы</li>
+            <li>Эскалации</li>
+            <li>Мобильный контроль</li>
+            <li>Дашборды</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- ============== AUDIENCE ============== -->
-  <section class="section" id="audience">
+  <section class="section section--dark section-audience" id="audience">
     <div class="container">
       <div class="section-head">
         <p class="eyebrow">Для кого</p>
-        <h2>Для крупной площадки, которая&nbsp;заботится <br>о&nbsp;клиентах и&nbsp;посетителях.</h2>
+        <h2>Для пространства, которое&nbsp;заботится <br>о&nbsp;каждом госте.</h2>
         <p class="section-lead">
-          ArenaOS обеспечивает безопасность, качество и сервис мероприятия, объединяя в одной
-          среде службы, подрядчиков, инвентарь и инструктажи под каждое событие.
+          «Кулиса» обеспечивает безопасность, качество и сервис каждого события на «Белом мысу»,
+          объединяя в одной среде все службы, инвентарь и инструктажи — будь то дегустация,
+          фестиваль, концерт или церемония.
         </p>
       </div>
 
@@ -87,8 +129,8 @@
               <rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/>
             </svg>
           </span>
-          <h3>Операционные и технические директора</h3>
-          <p>Видят весь календарь, готовность по событиям и службам, экономику в моменте. Держат площадку в одном фокусе.</p>
+          <h3>Управляющие и директора событийного направления</h3>
+          <p>Видят полный календарь событий «Белого мыса», готовность по каждому мероприятию и службам, экономику в моменте. Держат всю площадку в одном фокусе — от дегустации до фестиваля.</p>
         </article>
 
         <article class="aud-card">
@@ -97,8 +139,8 @@
               <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
             </svg>
           </span>
-          <h3>Начальники штатных служб</h3>
-          <p>Получают чек-лист на смену в мобильном приложении, отмечают выполнение, эскалируют — без созвонов и распечаток.</p>
+          <h3>Руководители штатных служб «Белого мыса»</h3>
+          <p>Получают чек-лист на смену в мобильном приложении, отмечают выполнение, эскалируют проблемы — без созвонов и распечаток. Всё, что нужно для работы винного города, под рукой.</p>
         </article>
 
         <article class="aud-card">
@@ -107,8 +149,8 @@
               <path d="M12 2 4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6l-8-4Z"/>
             </svg>
           </span>
-          <h3>Руководители службы контроля качества</h3>
-          <p>Контролируют исполнение подрядчиков и штатных служб по чек-листам, ведут примечания и оценки — чтобы стандарт сервиса не падал от события к событию.</p>
+          <h3>Руководители службы контроля качества и сервиса</h3>
+          <p>Контролируют работу подрядчиков и штатных служб по чек-листам, ведут примечания и оценки — чтобы стандарт гостеприимства и сервиса «Белого мыса» не падал от события к событию.</p>
         </article>
 
       </div>
@@ -116,7 +158,7 @@
   </section>
 
   <!-- ============== FEATURES ============== -->
-  <section class="section section-features" id="features">
+  <section class="section section-features section--light" id="features">
     <div class="container">
       <div class="section-head">
         <p class="eyebrow">Что внутри</p>
@@ -128,88 +170,216 @@
         <article class="feature">
           <div class="feature-text">
             <div class="feature-num">01</div>
-            <h3>Календарь событий</h3>
-            <p>Неделя по типам мероприятий — хоккей, концерт, театр, форум, корпоратив. Цветовая навигация, готовность по дням, занятость залов и площадки.</p>
+            <h3>Обзор дня</h3>
+            <div class="feature-ps">
+            <p class="pain"><span class="ps-label pain">Боль</span>Руководитель «Белого мыса» тратит часы на сбор информации из чатов, звонков и бумажных сводок — что готово к открытию дегустации, кто не вышел на смену, какие проблемы на монтаже шатров.</p>
+            <p class="sol"><span class="ps-label sol">Решение «Кулисы»</span>Оставайтесь в повестке в моменте. На одном экране: события дня с готовностью, логистика по часам и открытые эскалации служб винного города. Никаких переключений.</p>
+          </div>
           </div>
           <div class="feature-shot">
-            <img src="assets/screens/01-calendar.png" alt="Календарь событий ArenaOS" loading="lazy" />
+            <img src="assets/screens/13-overview-dashboard.png" alt="Обзор дня Кулиса — события, логистика, эскалации" loading="lazy" />
           </div>
         </article>
 
         <article class="feature reverse">
           <div class="feature-text">
             <div class="feature-num">02</div>
-            <h3>Реестр событий</h3>
-            <p>Список всех мероприятий с фильтрами по дате, заказчику, типу и статусу — в подготовке, утверждено, проведено. Видно, какие события сейчас в работе.</p>
+            <h3>Календарь событий</h3>
+            <div class="feature-ps">
+            <p class="pain"><span class="ps-label pain">Боль</span>На «Белом мысу» — несколько событий одновременно: гастрофестиваль, винная дегустация и концерт под открытым небом. А завтра — церемония и закрытый вечер для партнёров. Двойные бронирования и конфликты зон стоят денег: к 15 часам нужно развернуть фуд-корты и дегустационные шатры, а к 19 — уже другая рассадка, сцена и требования к звуку.</p>
+            <p class="sol"><span class="ps-label sol">Решение «Кулисы»</span>Ваш день, неделя, месяц — по типам мероприятий, числу гостей, локациям на карте «Белого мыса» и функциональным зонам. Цветовая навигация, готовность по дням, занятость шатров, открытых террас и залов, график вызова служб и персонала. Всё, чтобы винный город работал как часы.</p>
           </div>
-          <div class="feature-shot">
-            <img src="assets/screens/02-events-list.png" alt="Реестр событий ArenaOS" loading="lazy" />
+          </div>
+          <div class="feature-shot slider" data-slider>
+            <div class="slider-track">
+              <figure class="slide is-active">
+                <span class="slide-tag">Неделя</span>
+                <img src="assets/screens/01-calendar.png" alt="Календарь событий Кулиса — неделя по площадкам" loading="lazy" />
+              </figure>
+              <figure class="slide">
+                <span class="slide-tag">День</span>
+                <img src="assets/screens/01b-day-detail.png" alt="Календарь событий Кулиса — детализация одного дня" loading="lazy" />
+              </figure>
+            </div>
+            <button class="slider-arrow prev" type="button" aria-label="Предыдущий слайд">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+            </button>
+            <button class="slider-arrow next" type="button" aria-label="Следующий слайд">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+            <div class="slider-dots">
+              <button class="dot is-active" type="button" aria-label="Слайд 1: неделя"></button>
+              <button class="dot" type="button" aria-label="Слайд 2: день"></button>
+            </div>
           </div>
         </article>
 
         <article class="feature">
           <div class="feature-text">
             <div class="feature-num">03</div>
-            <h3>Паспорт события</h3>
-            <p>Единая карточка мероприятия: заказчик, описание, службы, персонал, инвентарь, документы, бюджет. Весь контекст события в одном экране.</p>
+            <h3>Реестр событий</h3>
+            <div class="feature-ps">
+            <p class="pain"><span class="ps-label pain">Боль</span>Десятки мероприятий в работе одновременно — как понять, какие уже утверждены, какие в подготовке, а какие просрочены?</p>
+            <p class="sol"><span class="ps-label sol">Решение «Кулисы»</span>Все события в едином окне — с фильтрами по дате, типу и статусу: в подготовке, утверждено, проведено. Видно, какие события сейчас в работе и какие запланированы.</p>
+          </div>
           </div>
           <div class="feature-shot">
-            <img src="assets/screens/03-event-passport.png" alt="Паспорт события ArenaOS" loading="lazy" />
+            <img src="assets/screens/02-events-list.png" alt="Реестр событий Кулиса" loading="lazy" />
           </div>
         </article>
 
         <article class="feature reverse">
           <div class="feature-text">
             <div class="feature-num">04</div>
-            <h3>Чек-лист события</h3>
-            <p>Подготовка по службам, обязательные пункты по регламенту, сроки и ответственные. Просрочки и эскалации видны сразу — без поиска по чатам.</p>
+            <h3>Паспорт события</h3>
+            <div class="feature-ps">
+            <p class="pain"><span class="ps-label pain">Боль</span>Информация о мероприятии размазана по десятку документов, писем и чатов. Проектные документы, схемы рассадки, списки вин и поставщиков — кто-то хранит в папке на рабочем столе, кто-то в распечатках за прошлый фестиваль. Найти последнюю версию сметы или контакты подрядчика по кейтерингу — целый квест.</p>
+            <p class="sol"><span class="ps-label sol">Решение «Кулисы»</span>Единая карточка события на «Белом мысу»: подробное описание формата, задействованные службы, персонал, инвентарь (шатры, мебель, посуда), документация, расходники, бюджет. Весь контекст мероприятия — от винной карты до графика вывоза мусора — на одном экране.</p>
+          </div>
           </div>
           <div class="feature-shot">
-            <img src="assets/screens/04-event-checklist.png" alt="Чек-лист события ArenaOS" loading="lazy" />
+            <img src="assets/screens/03-event-passport.png" alt="Паспорт события Кулиса" loading="lazy" />
           </div>
         </article>
 
         <article class="feature">
           <div class="feature-text">
             <div class="feature-num">05</div>
-            <h3>Службы</h3>
-            <p>Свои подразделения и привлечённые подрядчики в одном реестре. Загрузка, ответственные, исполнительность по чек-листам и примечания от сотрудников.</p>
+            <h3>Чек-лист события</h3>
+            <div class="feature-ps">
+            <p class="pain"><span class="ps-label pain">Боль</span>Подготовка к гастрофестивалю включает 200+ пунктов — электрика, дегустационные шатры, охрана, клининг, кейтеринг, монтаж сцены. Как убедиться, что всё сделано, и кто за что отвечает?</p>
+            <p class="sol"><span class="ps-label sol">Решение «Кулисы»</span>Подготовка по службам, обязательные пункты по регламенту, сроки и ответственные. Просрочки и эскалации видны сразу — без поиска по чатам.</p>
+          </div>
           </div>
           <div class="feature-shot">
-            <img src="assets/screens/05-services.png" alt="Реестр служб ArenaOS" loading="lazy" />
+            <img src="assets/screens/04-event-checklist.png" alt="Чек-лист события Кулиса" loading="lazy" />
           </div>
         </article>
 
         <article class="feature reverse">
           <div class="feature-text">
             <div class="feature-num">06</div>
-            <h3>Бюджет события</h3>
-            <p>Доход от заказчика и продажи билетов, затраты по подрядчикам. Быстрый взгляд на финансовую эффективность.</p>
+            <h3>Службы</h3>
+            <div class="feature-ps">
+            <p class="pain"><span class="ps-label pain">Боль</span>Многочисленные службы и персонал на каждом событии. У кого какая загрузка? Кто хорошо работает, а кто срывает сроки?</p>
+            <p class="sol"><span class="ps-label sol">Решение «Кулисы»</span>Все подразделения — в одном реестре. Загрузка каждой службы, зоны ответственности, наглядная исполнительность по чек-листам и примечания от руководителей. Вы всегда видите, кто работает хорошо, а кому нужна помощь. Без хаоса и простоев.</p>
           </div>
-          <div class="feature-shot">
-            <img src="assets/screens/06-event-budget.png" alt="Бюджет события ArenaOS" loading="lazy" />
+          </div>
+          <div class="feature-shot slider" data-slider>
+            <div class="slider-track">
+              <figure class="slide is-active">
+                <span class="slide-tag">Реестр</span>
+                <img src="assets/screens/05-services.png" alt="Реестр служб Кулиса" loading="lazy" />
+              </figure>
+              <figure class="slide">
+                <span class="slide-tag">Карточка службы</span>
+                <img src="assets/screens/07-vendor-performance.png" alt="Карточка службы Кулиса — исполнительность и примечания" loading="lazy" />
+              </figure>
+            </div>
+            <button class="slider-arrow prev" type="button" aria-label="Предыдущий слайд">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+            </button>
+            <button class="slider-arrow next" type="button" aria-label="Следующий слайд">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+            <div class="slider-dots">
+              <button class="dot is-active" type="button" aria-label="Слайд 1: реестр служб"></button>
+              <button class="dot" type="button" aria-label="Слайд 2: карточка службы"></button>
+            </div>
           </div>
         </article>
 
         <article class="feature">
           <div class="feature-text">
             <div class="feature-num">07</div>
-            <h3>Карточка подрядчика</h3>
-            <p>Исполнительность по чек-листам в процентах и лента примечаний от любого сотрудника площадки с цветными метками — хорошо, плохо, важно, нейтрально.</p>
+            <h3>Площадки и зоны</h3>
+            <div class="feature-ps">
+            <p class="pain"><span class="ps-label pain">Боль</span>Множество зон на «Белом мысу» — винотека, шатры, террасы, залы, Музей вина — и сложная координация монтажа, когда перестроить пространство нужно быстро или несколько раз за день. Excel, обзвон ответственных — потеря времени и контроля.</p>
+            <p class="sol"><span class="ps-label sol">Решение «Кулисы»</span>Загрузил карту → отметил зоны кликом → все трансформации площадок и зон всегда под рукой. Иерархия, фильтрация, поиск. Перестройка дня — без ошибок.</p>
           </div>
-          <div class="feature-shot">
-            <img src="assets/screens/07-vendor-performance.png" alt="Карточка подрядчика ArenaOS" loading="lazy" />
+          </div>
+          <div class="feature-shot slider" data-slider>
+            <div class="slider-track">
+              <figure class="slide is-active">
+                <span class="slide-tag">Список</span>
+                <img src="assets/screens/venues-list.png" alt="Площадки Кулиса — список площадок и зон" loading="lazy" />
+              </figure>
+              <figure class="slide">
+                <span class="slide-tag">Карта</span>
+                <img src="assets/screens/venues-map.png" alt="Площадки Кулиса — интерактивная карта зон" loading="lazy" />
+              </figure>
+            </div>
+            <button class="slider-arrow prev" type="button" aria-label="Предыдущий слайд">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+            </button>
+            <button class="slider-arrow next" type="button" aria-label="Следующий слайд">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+            <div class="slider-dots">
+              <button class="dot is-active" type="button" aria-label="Слайд 1: список"></button>
+              <button class="dot" type="button" aria-label="Слайд 2: карта"></button>
+            </div>
           </div>
         </article>
 
         <article class="feature reverse">
           <div class="feature-text">
             <div class="feature-num">08</div>
-            <h3>Мобильный чек-лист</h3>
-            <p>Вместо хаоса в рациях и звонков — используйте мобильное приложение ArenaOS. Начальник службы проходит по чек-листу в телефоне: подтверждает готовность всех действий перед предстоящим событием или эскалирует выявленную проблему. Руководитель видит статус онлайн в реальном времени, не дожидаясь звонка или бумажного отчёта.</p>
+            <h3>Инвентарь</h3>
+            <div class="feature-ps">
+            <p class="pain"><span class="ps-label pain">Боль</span>Оборудование «уплывает» между зонами и мероприятиями. Где дегустационные столы, кто забрал витрины для бутылок, куда делись световые приборы с прошлого фестиваля и когда их вернут. А нужные бокалы так и не доставили после церемонии?</p>
+            <p class="sol"><span class="ps-label sol">Решение «Кулисы»</span>Учёт оборудования площадки — от мебели и световых приборов до звуковой аппаратуры и витрин. По каждой позиции: состояние, параметры, стоимость, место хранения, ответственный сотрудник и привязка к конкретному событию «Белого мыса». История перемещений и статусов — без поиска по чатам и таблицам.</p>
+          </div>
           </div>
           <div class="feature-shot">
-            <img src="assets/screens/08-mobile-checklist.png" alt="Мобильный чек-лист ArenaOS" loading="lazy" />
+            <img src="assets/screens/09-event-inventory.png" alt="Инвентарь события Кулиса" loading="lazy" />
+          </div>
+        </article>
+
+        <article class="feature">
+          <div class="feature-text">
+            <div class="feature-num">09</div>
+            <h3>Бюджет события</h3>
+            <div class="feature-ps">
+            <p class="pain"><span class="ps-label pain">Боль</span>Мероприятие прошло, а сколько на него реально потратили и заработали? Данные разбросаны по таблицам Excel и десяткам окон бухгалтерской программы.</p>
+            <p class="sol"><span class="ps-label sol">Решение «Кулисы»</span>Быстрый взгляд на финансовую эффективность конкретного события на «Белом мысу» — план-факт в реальном времени. Никакого Excel. Только цифры сразу после проведения.</p>
+          </div>
+          </div>
+          <div class="feature-shot">
+            <img src="assets/screens/06-event-budget.png" alt="Бюджет события Кулиса" loading="lazy" />
+          </div>
+        </article>
+
+        <article class="feature reverse">
+          <div class="feature-text">
+            <div class="feature-num">10</div>
+            <h3>Мобильный чек-лист</h3>
+            <div class="feature-ps">
+            <p class="pain"><span class="ps-label pain">Боль</span>Хаос в рациях, звонках и бумажках при подготовке события. Начальник службы не может оперативно подтвердить готовность или поднять проблему.</p>
+            <p class="sol"><span class="ps-label sol">Решение «Кулисы»</span>Начальник службы проходит по чек-листу в телефоне — подтверждает готовность или эскалирует проблему. Руководитель видит статус онлайн в реальном времени, не дожидаясь звонка или бумажного отчёта.</p>
+          </div>
+          </div>
+          <div class="feature-shot slider" data-slider>
+            <div class="slider-track">
+              <figure class="slide is-active">
+                <span class="slide-tag phrase">Личный кабинет руководителя</span>
+                <img src="assets/screens/10-mobile-director.png" alt="Мобильный кабинет руководителя Кулиса — готовность и эскалации" loading="lazy" />
+              </figure>
+              <figure class="slide">
+                <span class="slide-tag phrase">Личный кабинет оператора смены</span>
+                <img src="assets/screens/08-mobile-checklist.png" alt="Мобильный чек-лист Кулиса — оператор смены" loading="lazy" />
+              </figure>
+            </div>
+            <button class="slider-arrow prev" type="button" aria-label="Предыдущий слайд">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+            </button>
+            <button class="slider-arrow next" type="button" aria-label="Следующий слайд">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+            <div class="slider-dots">
+              <button class="dot is-active" type="button" aria-label="Слайд 1: руководитель"></button>
+              <button class="dot" type="button" aria-label="Слайд 2: оператор смены"></button>
+            </div>
           </div>
         </article>
 
@@ -217,15 +387,51 @@
     </div>
   </section>
 
+  <!-- ============== BUSINESS IMPACT ============== -->
+  <section class="section section-impact section--dark" id="impact">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Экономика внедрения</p>
+        <h2>Бизнес-<span style="color:rgb(var(--gold-300));">эффект</span></h2>
+        <p class="section-lead">
+          Что меняется на дистанции одного сезона работы «Белого мыса» в Кулиса.
+        </p>
+      </div>
+
+      <div class="impact-grid">
+        <div class="impact-card">
+          <div class="impact-num">+20%</div>
+          <div class="impact-text">к скорости подготовки события</div>
+        </div>
+        <div class="impact-card">
+          <div class="impact-num">−40%</div>
+          <div class="impact-text">времени на бумажное взаимодействие</div>
+        </div>
+        <div class="impact-card">
+          <div class="impact-num">−50%</div>
+          <div class="impact-text">времени на коммуникации</div>
+        </div>
+        <div class="impact-card">
+          <div class="impact-num">−30%</div>
+          <div class="impact-text">трудозатрат на администрирование</div>
+        </div>
+        <div class="impact-card">
+          <div class="impact-num">100%</div>
+          <div class="impact-text">прозрачности себестоимости подготовки каждого мероприятия</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ============== CONTACTS ============== -->
-  <section class="section section-contacts" id="contacts">
+  <section class="section section-contacts section--light" id="contacts">
     <div class="container">
       <div class="contacts-card">
         <div class="contacts-text">
           <p class="eyebrow">Контакты</p>
-          <h2>MONS · ArenaOS</h2>
+          <h2>MONS · Кулиса</h2>
           <p class="section-lead">
-            ArenaOS — продукт компании MONS. Платформа для комплексного управления организацией событий на площадке.
+            Кулиса — продукт компании MONS. Платформа для комплексного управления организацией событий на площадке «Белый мыс».
           </p>
         </div>
 
@@ -270,14 +476,14 @@
       <div class="lc-brand">
         <span class="logo">
           <svg width="22" height="22" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-            <path d="M4 28V16a12 12 0 0 1 24 0v12" stroke="rgb(232,194,151)" stroke-width="2" stroke-linecap="round"/>
-            <path d="M10 28V18a6 6 0 0 1 12 0v10" stroke="rgb(232,194,151)" stroke-width="1.6" stroke-linecap="round" opacity="0.7"/>
-            <path d="M2 28h28" stroke="rgb(232,194,151)" stroke-width="2" stroke-linecap="round"/>
+            <path d="M4 28V16a12 12 0 0 1 24 0v12" stroke="rgb(124,178,226)" stroke-width="2" stroke-linecap="round"/>
+            <path d="M10 28V18a6 6 0 0 1 12 0v10" stroke="rgb(124,178,226)" stroke-width="1.6" stroke-linecap="round" opacity="0.7"/>
+            <path d="M2 28h28" stroke="rgb(124,178,226)" stroke-width="2" stroke-linecap="round"/>
           </svg>
         </span>
         <span>
-          <span class="name">ArenaOS</span>
-          <span class="tag" style="display:block;">УПРАВЛЕНИЕ ПЛОЩАДКОЙ</span>
+          <span class="name">Кулиса</span>
+          <span class="tag" style="display:block;">ВИННЫЙ ГОРОД · БЕЛЫЙ МЫС</span>
         </span>
       </div>
 
@@ -287,7 +493,7 @@
       <form class="login-form" onsubmit="event.preventDefault();">
         <div class="field">
           <label for="login-email">E-mail или логин</label>
-          <input type="text" id="login-email" name="email" placeholder="ivan@arena.ru" autocomplete="username" />
+          <input type="text" id="login-email" name="email" placeholder="ivan@belymys.ru" autocomplete="username" />
         </div>
         <div class="field">
           <label for="login-password">Пароль</label>
@@ -308,9 +514,15 @@
     <button class="lightbox-close" type="button" aria-label="Закрыть (Esc)">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
     </button>
+    <button class="lightbox-nav prev" type="button" aria-label="Предыдущий кадр (←)" hidden>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+    </button>
+    <button class="lightbox-nav next" type="button" aria-label="Следующий кадр (→)" hidden>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+    </button>
     <figure class="lightbox-figure">
-      <img class="lightbox-img" src="" alt="" />
       <figcaption class="lightbox-caption"></figcaption>
+      <img class="lightbox-img" src="" alt="" />
     </figure>
   </div>
 
@@ -320,13 +532,36 @@
       const lbImg    = lightbox.querySelector('.lightbox-img');
       const lbCap    = lightbox.querySelector('.lightbox-caption');
       const lbClose  = lightbox.querySelector('.lightbox-close');
+      const lbFig    = lightbox.querySelector('.lightbox-figure');
+      const lbPrev   = lightbox.querySelector('.lightbox-nav.prev');
+      const lbNext   = lightbox.querySelector('.lightbox-nav.next');
 
-      function open(src, caption) {
-        lbImg.src = src;
-        lbImg.alt = caption || '';
-        lbCap.textContent = caption || '';
+      // Галерея: кадры текущей фичи (для слайдера — несколько, иначе один).
+      let lbItems = [];
+      let lbIdx = 0;
+
+      function renderLb() {
+        const it = lbItems[lbIdx];
+        if (!it) return;
+        lbImg.src = it.src;
+        lbImg.alt = it.alt || it.label || '';
+        lbCap.textContent = it.label || '';
+        const multi = lbItems.length > 1;
+        lbPrev.hidden = !multi;
+        lbNext.hidden = !multi;
+        if (lbFig) lbFig.scrollTop = 0; // длинный PNG — показываем с начала при смене кадра
+      }
+      function openGallery(items, startIdx) {
+        lbItems = items || [];
+        lbIdx = startIdx || 0;
+        renderLb();
         lightbox.setAttribute('aria-hidden', 'false');
         document.body.style.overflow = 'hidden';
+      }
+      function step(d) {
+        if (lbItems.length < 2) return;
+        lbIdx = (lbIdx + d + lbItems.length) % lbItems.length;
+        renderLb();
       }
       function close() {
         lightbox.setAttribute('aria-hidden', 'true');
@@ -337,12 +572,45 @@
 
       const hintSvg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg>';
 
+      // ===== Слайдеры скринов (несколько слайдов на одну фичу) =====
+      document.querySelectorAll('[data-slider]').forEach((root) => {
+        const track  = root.querySelector('.slider-track');
+        const slides = Array.from(root.querySelectorAll('.slide'));
+        const dots   = Array.from(root.querySelectorAll('.slider-dots .dot'));
+        const prev   = root.querySelector('.slider-arrow.prev');
+        const next   = root.querySelector('.slider-arrow.next');
+        if (!track || slides.length < 2) return;
+        const total  = slides.length;
+        root._idx = 0;
+
+        function go(i) {
+          const next = (i + total) % total;
+          root._idx = next;
+          track.style.transform = 'translateX(' + (-next * 100) + '%)';
+          slides.forEach((s, k) => s.classList.toggle('is-active', k === next));
+          dots.forEach((d, k) => d.classList.toggle('is-active', k === next));
+        }
+        const stop = (e) => e.stopPropagation();
+        prev && prev.addEventListener('click', (e) => { stop(e); go(root._idx - 1); });
+        next && next.addEventListener('click', (e) => { stop(e); go(root._idx + 1); });
+        dots.forEach((d, k) => d.addEventListener('click', (e) => { stop(e); go(k); }));
+      });
+
       document.querySelectorAll('.feature-shot').forEach((box) => {
         box.setAttribute('role', 'button');
         box.setAttribute('tabindex', '0');
         box.setAttribute('aria-label', 'Открыть скриншот в полном размере');
-        const img = box.querySelector('img');
-        if (!img) return;
+
+        // Для слайдера берём текущий слайд; для одиночной картинки — первый <img>.
+        const getImg = () => {
+          if (box.matches('[data-slider]')) {
+            const idx = box._idx || 0;
+            const imgs = box.querySelectorAll('.slide img');
+            return imgs[idx] || imgs[0];
+          }
+          return box.querySelector('img');
+        };
+        if (!getImg()) return;
 
         // подсказка «Открыть» появляется при ховере
         if (!box.querySelector('.zoom-hint')) {
@@ -352,7 +620,28 @@
           box.appendChild(hint);
         }
 
-        const action = () => open(img.src, img.alt);
+        // Кадры фичи для полноэкранной галереи. Бейдж-подпись:
+        // слайдер — подпись каждого слайда; одиночный скрин — заголовок модуля.
+        const buildItems = () => {
+          if (box.matches('[data-slider]')) {
+            return Array.from(box.querySelectorAll('.slide')).map((s) => {
+              const im = s.querySelector('img');
+              const tag = s.querySelector('.slide-tag');
+              return { src: im ? im.src : '', label: tag ? tag.textContent.trim() : '', alt: im ? im.alt : '' };
+            }).filter((it) => it.src);
+          }
+          const im = box.querySelector('img');
+          const feat = box.closest('.feature');
+          const h = feat && feat.querySelector('.feature-text h3');
+          return im ? [{ src: im.src, label: h ? h.textContent.trim() : '', alt: im.alt }] : [];
+        };
+
+        const action = () => {
+          const items = buildItems();
+          if (!items.length) return;
+          const start = box.matches('[data-slider]') ? (box._idx || 0) : 0;
+          openGallery(items, Math.min(start, items.length - 1));
+        };
         box.addEventListener('click', action);
         box.addEventListener('keydown', (e) => {
           if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); action(); }
@@ -364,8 +653,13 @@
         if (e.target === lightbox) close();
       });
       lbClose.addEventListener('click', close);
+      lbPrev.addEventListener('click', (e) => { e.stopPropagation(); step(-1); });
+      lbNext.addEventListener('click', (e) => { e.stopPropagation(); step(1); });
       document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && lightbox.getAttribute('aria-hidden') === 'false') close();
+        if (lightbox.getAttribute('aria-hidden') !== 'false') return;
+        if (e.key === 'Escape') close();
+        else if (e.key === 'ArrowLeft') step(-1);
+        else if (e.key === 'ArrowRight') step(1);
       });
 
       // ===== Login modal =====
@@ -398,7 +692,7 @@
   <!-- ============== FOOTER ============== -->
   <footer class="site-footer">
     <div class="container site-footer-inner">
-      <span>© 2026 MONS · ArenaOS</span>
+      <span>© 2026 MONS · Кулиса</span>
       <span>v0.1.0 · MVP</span>
     </div>
   </footer>
